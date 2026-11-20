@@ -215,6 +215,11 @@ h3 { font-size: 0.82rem; line-height: 1.45; }
   margin-top: 0.55rem;
 }
 
+a.repo-link {
+  color: #f5f5f5;
+  text-underline-offset: 3px;
+}
+
 h3 .quelle,
 .block-head .quelle,
 .subhead .quelle { margin-top: 0; }

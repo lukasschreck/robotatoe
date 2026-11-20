@@ -66,6 +66,7 @@ export function countBadges(source: Daten): Record<BadgeStatus, number> {
   }
   add(source.phase4.cfo?.status);
   add(source.landing.status);
+  add(source.demoHandwerk.status);
   add(source.positionierung.status);
   add(source.abstimmung.status);
   add(source.leitlinie.status);
@@ -77,6 +78,7 @@ export function countBadges(source: Daten): Record<BadgeStatus, number> {
   add("vorschlag");
   add(source.usp.status);
   add(source.mvp.status);
+  add(source.mvp.freigaberegel.status);
   add(source.mvp.regelStatus);
   add(source.tech.status);
   add(source.architektur.status);

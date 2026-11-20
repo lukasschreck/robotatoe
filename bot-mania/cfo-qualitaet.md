@@ -41,6 +41,9 @@ Das sind fiktive Branchentypen, keine echten Firmen und keine echten Kontakte.
 
 Für alle Pilotkunden gilt: 5 bis 50 Leute, keine eigene IT, Arbeit mit Slack oder Mail, Bereitschaft zum 14-tägigen Gratistest, und ein Mensch klickt jede Freigabe. Als Hauptpilot ist Handwerk (1) vorgeschlagen, Robby hat zugestimmt.
 
+Demo-Ablauf v2.1: [bot-mania/demo-ablauf-handwerk.md](demo-ablauf-handwerk.md)
+Zeitwert-Rechnung Elektro Funke (fiktiv) v2: bot-mania/nutzenrechnung-funke.md
+
 ## 4. Qualitätsprüfungen der Keks-Inspektorin
 
 Die Keks-Inspektorin prüft jeden Entwurf gegen eine Checkliste mit fünf Punkten: Ist das Ziel klar? Ist es machbar? Welche Risiken gibt es? Was fehlt? Und welche eine Kleinigkeit würde es zum Scheitern bringen? Ihr Urteil lautet dann „Freigegeben“ oder „Zurück in den Ofen“.
@@ -88,3 +91,7 @@ Quellen, alle abgerufen am 20.11.2026:
 - Mistral-Preise (https://mistral.ai/pricing): 0,5 $ pro 1 Mio. Tokens Eingabe, 1,5 $ pro 1 Mio. Tokens Ausgabe.
 - Hetzner Cloud: CPX12 9,99 €, CPX22 16,99 €.
 - EZB-Referenzkurs vom 19.11.2026: 1 € = 1,0992 $.
+
+## Offen
+
+- Nutzenrechnung Elektro Funke (fiktiv) v2, geprüft, PR offen
