@@ -129,11 +129,23 @@ export interface Landing {
   status: DataStatus;
   statusText: string;
   headline: string;
+  seo: string;
   intro: string;
   fuerWen: string;
   schritte: string[];
   preise: string[];
+  datenschutz: string;
+  intern: string;
   cta: string;
+  quelle: string;
+}
+
+export interface DemoHandwerk {
+  titel: string;
+  status: DataStatus;
+  statusText: string;
+  datei: string;
+  text: string;
   quelle: string;
 }
 
@@ -289,6 +301,7 @@ export interface Daten {
   phasen: Phase[];
   phase4: Phase4;
   landing: Landing;
+  demoHandwerk: DemoHandwerk;
   demo: Demo;
   spielregeln: Spielregeln;
   zielkunde: Zielkunde;

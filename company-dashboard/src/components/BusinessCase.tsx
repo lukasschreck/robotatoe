@@ -7,6 +7,7 @@ export function BusinessCase() {
     phasen,
     phase4,
     landing,
+    demoHandwerk,
     demo,
     positionierung,
     abstimmung,
@@ -128,6 +129,7 @@ export function BusinessCase() {
           <p>{landing.intro}</p>
         </div>
         <div className="landing-body">
+          <p className="landing-label">{landing.seo}</p>
           <p>
             <strong>Für wen:</strong> {landing.fuerWen}
           </p>
@@ -143,10 +145,29 @@ export function BusinessCase() {
               <li key={price}>{price}</li>
             ))}
           </ul>
+          <p>
+            <strong>Datenschutz:</strong> {landing.datenschutz}
+          </p>
           <p className="landing-cta">„{landing.cta}“</p>
+          <p className="quelle">Intern: {landing.intern}</p>
         </div>
       </article>
       <Quelle>{landing.quelle}</Quelle>
+
+      <div className="callout">
+        <div className="block-head">
+          <h3>{demoHandwerk.titel}</h3>
+          <Badge status={demoHandwerk.status} text={demoHandwerk.statusText} />
+        </div>
+        <p>{demoHandwerk.text}</p>
+        <p className="quelle">
+          Datei im Repo:{" "}
+          <a className="repo-link" href={demoHandwerk.datei.split("/").pop() ?? demoHandwerk.datei}>
+            {demoHandwerk.datei}
+          </a>
+        </p>
+        <Quelle>{demoHandwerk.quelle}</Quelle>
+      </div>
 
       <h3 className="subhead">
         {demo.titel}{" "}

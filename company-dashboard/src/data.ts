@@ -2,8 +2,8 @@
 import type { Daten } from "./types.ts";
 
 export const daten = {
-  "stand": "Stand: 20.11.2026, 11:53 (Berlin) · Version 10.10",
-  "firma": "Name: Crewlane, von Lukas freigegeben · „Your bot team. Your final click.“",
+  "stand": "Stand: 20.11.2026, 12:00 (Berlin) · Version 10.14",
+  "firma": "Name: Crewlane, von Lukas freigegeben · Unterzeile: „Crewlane – Ihr Büro-Team in Slack. Sie haben das letzte Wort.“ (beschlossen 11:57)",
   "produkt": "Bot-Team-as-a-Service",
   "claim": "Ein fertig eingerichtetes Bot-Team in Slack oder per Mail, das Mails, Termine, Angebote und Support vorbereitet. Nichts geht ohne Klick des Kunden raus.",
   "positionierung": {
@@ -243,23 +243,34 @@ export const daten = {
     "quelle": "Robby, 20.11. (Eyads Bot im Marktcheck-Thread, 11:42)"
   },
   "landing": {
-    "titel": "Landingpage-Text",
-    "status": "aktiv",
-    "statusText": "geliefert, von Ada freigegeben",
-    "headline": "Crewlane – Your bot team. Your final click.",
-    "intro": "Ihr fertiges Bot-Team für Slack oder E-Mail: Es bereitet Mails, Termine, Angebote und Support-Antworten vor, und nichts geht raus ohne Ihren Klick.",
-    "fuerWen": "Kleine Firmen mit 5 bis 50 Leuten ohne eigene IT.",
+    "titel": "Landingpage-Text v2.1",
+    "status": "freigabe",
+    "statusText": "Entwurf, nicht veröffentlicht · von Ada freigegeben (Graf Kabelbrand, 11:56)",
+    "headline": "Crewlane – Ihr Büro-Team in Slack. Sie haben das letzte Wort.",
+    "seo": "Das Bot-Team fürs Handwerk",
+    "intro": "Ihr fertig eingerichtetes Büro-Team in Slack: Es bereitet Mails, Termine, Angebote (nur aus Ihren eigenen Preisen) und Kundenantworten vor und fasst bei offenen Angeboten nach. Der Freigabe-Wächter erinnert Sie, wenn ein Entwurf liegen bleibt. Nichts geht raus ohne Ihren Klick.",
+    "fuerWen": "Handwerksbetriebe und kleine Firmen mit 5 bis 50 Leuten ohne eigene IT. Pilotpaket: Crewlane Handwerk („Weniger Büro, mehr Baustelle.“).",
     "schritte": [
       "Bots auswählen",
-      "Postfach oder Slack verbinden",
+      "Slack und Postfach verbinden",
       "Entwürfe prüfen und mit einem Klick freigeben"
     ],
     "preise": [
       "Starter: 1 Bot nach Wahl (Postfach oder Termine).",
       "Team: Mail-Bot, Koordinator, Termin- und Angebots-Bot."
     ],
+    "datenschutz": "Hosting in der EU, AVV ab dem ersten Tag, KI-Hinweis nach der KI-Verordnung inklusive.",
+    "intern": "Englischer Claim „Your bot team. Your final click.“ nur intern (laut Moderator, 11:53). Keine Kanal-Roadmap nach außen.",
     "cta": "Jetzt Pilotplatz anfragen",
-    "quelle": "Robby, 20.11."
+    "quelle": "Robby, 20.11. (Text v2.1 von Graf Kabelbrand, Unterzeile laut Moderator 11:57)"
+  },
+  "demoHandwerk": {
+    "titel": "Crewlane Handwerk: Demo-Ablauf (v2.1, fiktiv)",
+    "status": "freigabe",
+    "statusText": "vom Moderator als Stand bestätigt, Einwände bis 12:10",
+    "datei": "bot-mania/demo-ablauf-handwerk.md",
+    "text": "Vorschlag des CFO- und Qualitätsbüros (Wuschel von Flauschenstein), freigegeben von der Keks-Inspektorin, fiktiv. Entscheidung durch die Menschen. Sechs Schritte am Beispiel Elektro Funke GmbH (fiktiv): Anfrage per Mail, Koordinator verteilt, Entwürfe, Freigabe per Klick, Angebot nur aus eigener Preisliste, Abendzusammenfassung und Protokoll. Bewusst nicht in der Demo: andere Kanäle als Slack und Mail.",
+    "quelle": "Robby, 20.11. (Moderator, 11:57)"
   },
   "demo": {
     "titel": "Demo-Ablauf",
@@ -537,6 +548,30 @@ export const daten = {
   ],
   "entscheidungen": [
     {
+      "titel": "Unterzeile und Paketzeile beschlossen",
+      "text": "Unterzeile: „Crewlane – Ihr Büro-Team in Slack. Sie haben das letzte Wort.“ (Option 1; Patt 2:2 vom Moderator aufgelöst). Paketzeile für Crewlane Handwerk: „Weniger Büro, mehr Baustelle.“ SEO-Zeile „Das Bot-Team fürs Handwerk“ bleibt.",
+      "status": "entschieden",
+      "statusText": "beschlossen (Moderator, 11:57)",
+      "datum": "20.11.2026, 11:57",
+      "quelle": "Robby"
+    },
+    {
+      "titel": "Landingpage-Text v2.1",
+      "text": "Ersetzt v2. Entwurf, nicht veröffentlicht.",
+      "status": "freigabe",
+      "statusText": "von Ada freigegeben (Graf Kabelbrand, 11:56)",
+      "datum": "20.11.2026, 11:56",
+      "quelle": "Robby"
+    },
+    {
+      "titel": "SEO-Unterzeile, Paketname, englischer Claim",
+      "text": "SEO-Unterzeile: „Das Bot-Team fürs Handwerk“. Paketname: „Crewlane Handwerk“ (von Lukas freigegeben, 11:52). Der englische Claim „Your bot team. Your final click.“ bleibt intern. Die Unterzeile war hier noch offen (Patt 2:2) und ist seit 11:57 beschlossen.",
+      "status": "entschieden",
+      "statusText": "laut Moderator (11:53)",
+      "datum": "20.11.2026, 11:53",
+      "quelle": "Robby"
+    },
+    {
       "titel": "Paketname für den Handwerk-Piloten: Crewlane Handwerk",
       "text": "„Crewlane Handwerk“ ist der Paketname für den Handwerk-Piloten.",
       "status": "entschieden",
@@ -742,13 +777,8 @@ export const daten = {
   ],
   "fragen": [
     {
-      "frage": "Unterzeile für Crewlane: Abstimmung läuft bis 12:05",
-      "wer": "Abstimmung im Team",
-      "quelle": "Robby, 20.11."
-    },
-    {
-      "frage": "Telefon und WhatsApp später als weitere Kanäle prüfen",
-      "wer": "offen",
+      "frage": "Intern: Ob weitere Kanäle (z. B. Telefon, WhatsApp) kommen. Keine Kanal-Roadmap nach außen",
+      "wer": "Lukas, Ada",
       "quelle": "Robby, 20.11."
     },
     {
@@ -908,6 +938,21 @@ export const daten = {
       "datum": "20.11.2026, 11:52",
       "text": "Lukas gibt „Crewlane Handwerk“ als Paketnamen für den Handwerk-Piloten frei. Abstimmung über die Unterzeile läuft bis 12:05.",
       "quelle": "Robby"
+    },
+    {
+      "datum": "20.11.2026, 11:53",
+      "text": "Unterzeile: Jessica bleibt um 11:53:50 bei Option 2, damit Patt 2:2 (1: Lukas, Ada; 2: Eyad, Jessica); Bestätigung durch Moderator steht aus. Laut Moderator: SEO-Unterzeile „Das Bot-Team fürs Handwerk“, englischer Claim bleibt intern. „Weniger Büro, mehr Baustelle.“ bleibt Vorschlag des Moderators.",
+      "quelle": "Robby (Moderator)"
+    },
+    {
+      "datum": "20.11.2026, 11:56",
+      "text": "Ada gibt den Landingpage-Text v2.1 frei (Entwurf, nicht veröffentlicht). Jessica bestätigt um 11:56:31 endgültig Option 2; weiter 2:2.",
+      "quelle": "Robby"
+    },
+    {
+      "datum": "20.11.2026, 11:57",
+      "text": "Moderator löst das Patt auf: Unterzeile „Crewlane – Ihr Büro-Team in Slack. Sie haben das letzte Wort.“, Paketzeile „Weniger Büro, mehr Baustelle.“ beschlossen. Demo-Ablauf v2.1 als Stand bestätigt, Einwände bis 12:10.",
+      "quelle": "Robby (Moderator)"
     },
     {
       "datum": "bis 11:40",
