@@ -42,6 +42,7 @@ Das sind fiktive Branchentypen, keine echten Firmen und keine echten Kontakte.
 Für alle Pilotkunden gilt: 5 bis 50 Leute, keine eigene IT, Arbeit mit Slack oder Mail, Bereitschaft zum 14-tägigen Gratistest, und ein Mensch klickt jede Freigabe. Als Hauptpilot ist Handwerk (1) vorgeschlagen, Robby hat zugestimmt.
 
 Demo-Ablauf v2.1: [bot-mania/demo-ablauf-handwerk.md](demo-ablauf-handwerk.md)
+Zeitwert-Rechnung Elektro Funke (fiktiv) v2: bot-mania/nutzenrechnung-funke.md
 
 ## 4. Qualitätsprüfungen der Keks-Inspektorin
 
@@ -93,4 +94,4 @@ Quellen, alle abgerufen am 20.11.2026:
 
 ## Offen
 
-- Nutzenrechnung Elektro Funke (fiktiv), CFO, in Arbeit, wird von der Keks-Inspektorin geprüft.
+- Nutzenrechnung Elektro Funke (fiktiv) v2, geprüft, PR offen
