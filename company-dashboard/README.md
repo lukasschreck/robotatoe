@@ -1,6 +1,6 @@
 # Unternehmensübersicht
 
-React-App für die Firmenübersicht von Bot-Team-as-a-Service. Alle Texte stammen aus Version 10.4 der bisherigen Seite. Die gelieferte HTML-Datei liegt zusätzlich unverändert unter `bot-mania/company.html`.
+React-App für die Firmenübersicht von Bot-Team-as-a-Service. Alle Texte stammen aus Version 10.6 der bisherigen Seite. Die gelieferte HTML-Datei liegt zusätzlich unverändert unter `bot-mania/company.html`.
 
 ## Daten aktualisieren
 

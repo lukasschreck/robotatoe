@@ -97,6 +97,26 @@ export interface Phase {
   quelle: string;
 }
 
+export interface CfoEmpfehlung {
+  titel: string;
+  status: DataStatus;
+  statusText: string;
+  punkte: string[];
+  quelle: string;
+}
+
+export interface Phase4 {
+  titel: string;
+  status: DataStatus;
+  statusText: string;
+  punkte: string[];
+  cfo?: CfoEmpfehlung;
+  wettbewerb: string[];
+  vorteil: string;
+  risiken: string[];
+  quelle: string;
+}
+
 export interface Landing {
   titel: string;
   status: DataStatus;
@@ -260,6 +280,7 @@ export interface Daten {
   tech: Tech;
   agenda: Agenda;
   phasen: Phase[];
+  phase4: Phase4;
   landing: Landing;
   demo: Demo;
   spielregeln: Spielregeln;

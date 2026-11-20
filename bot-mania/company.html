@@ -88,7 +88,7 @@ footer{text-align:center;font-size:.75rem;color:var(--grau);padding:0 1rem 2rem}
 <script>
 /* ===== DATEN: nur Geliefertes. status: entschieden | freigabe | inarbeit | geplant | vorschlag | offen ===== */
 const DATEN = {
-  stand: "Stand: 20.11.2026, 11:42 (Berlin) · Version 10.4",
+  stand: "Stand: 20.11.2026, 11:44 (Berlin) · Version 10.6",
   firma: "Name: Crewlane, von Lukas freigegeben · „Your bot team. Your final click.“",
   produkt: "Bot-Team-as-a-Service",
   claim: "Ein fertig eingerichtetes Bot-Team in Slack oder per Mail, das Mails, Termine, Angebote und Support vorbereitet. Nichts geht ohne Klick des Kunden raus.",
@@ -128,6 +128,22 @@ const DATEN = {
       {wer:"Eyads Bot", was:"Mission", status:"aktiv", label:"übernommen 11:13"}],
       danach:"Namensabstimmung um 11:35 ausgezählt. Name: Crewlane, von Lukas freigegeben.", quelle:"Robby, 20.11."}
   ],
+  phase4: {titel:"Phase 4: Schärfung", status:"vorschlag", statusText:"Vorschlag Moderator, nicht beschlossen", punkte:[
+    "Telefon und WhatsApp statt nur Slack, weil Handwerksbetriebe Aufträge vor allem am Telefon verlieren. Ob das in Starter oder Team gehört, ist eine offene Frage an Lukas; Wuschel prüft.",
+    "Angebote nur aus den eigenen Preisen und Stammdaten des Betriebs, weil HERO und plancraft das direkt in ihre Software einbauen.",
+    "Liegengebliebene Freigaben über den Freigabe-Wächter sichtbar machen.",
+    "Bei offenen Angeboten und unbeantworteten Kundenmails nachfassen, statt nur Entwürfe zu schreiben.",
+    "DSGVO konkret: Auftragsverarbeitungsvertrag (AVV) und KI-Hinweis nach der KI-Verordnung von Anfang an. Ob das verbindlich zugesagt wird, ist eine offene Frage an Lukas."],
+    cfo:{titel:"CFO-Empfehlung zu Punkt 1 (Telefon)", status:"vorschlag", statusText:"Vorschlag CFO, Entscheidung Lukas offen", punkte:[
+      "Team (ca. 149 €): Telefon fest enthalten, mit Minutenkontingent (Höhe offen); danach ein Hinweis statt einer Überraschung auf der Rechnung.",
+      "Starter (ca. 49 €), Fassung A: WhatsApp-Text plus Anrufliste.",
+      "Starter (ca. 49 €), Fassung B: Telefon als Zusatzmodul.",
+      "Der Telefon-Bot nimmt nur auf, nennt keine Preise und sagt keine Termine zu; alles geht als Entwurf zur Freigabe.",
+      "Der Krümelzähler rechnet die Kosten pro Minute."], quelle:"Robby, 20.11. (Wuschel, Marktcheck-Thread, 11:42)"},
+    wettbewerb:["Lindy ab 29,99 $ pro Nutzer","Marblism ab 24 $","HERO mit KI-Angeboten ab etwa 119 €"],
+    vorteil:"Festpreis statt Credits.",
+    risiken:["US-Anbieter besetzen den Begriff „KI-Mitarbeiter“.","Handwerkersoftware baut die KI selbst ein.","Das Vertrauen ist weg, sobald ein Preis ohne Klick rausgeht."],
+    quelle:"Robby, 20.11. (Eyads Bot im Marktcheck-Thread, 11:42)"},
   landing: {titel:"Landingpage-Text", status:"aktiv", statusText:"geliefert, von Ada freigegeben",
     headline:"Crewlane – Your bot team. Your final click.",
     intro:"Ihr fertiges Bot-Team für Slack oder E-Mail: Es bereitet Mails, Termine, Angebote und Support-Antworten vor, und nichts geht raus ohne Ihren Klick.",
@@ -221,6 +237,8 @@ const DATEN = {
     {titel:"Sub-Bots von Graf Kabelbrand", text:"Monokel-Marketing (laut Steckbrief des Grafen), Monokel-Labor, Rezept-Tüftler, Funkenschlag, Support-Kobold und weitere angekündigte.", warStatus:"vorschlag", datum:"20.11.2026"}
   ],
   fragen: [
+    {frage:"Phase 4: Telefon und WhatsApp in Starter oder Team? CFO-Empfehlung liegt vor (Telefon im Team, Starter in zwei Fassungen)", wer:"Lukas", quelle:"Robby, 20.11."},
+    {frage:"Phase 4: AVV und KI-Hinweis nach der KI-Verordnung verbindlich zusagen?", wer:"Lukas", quelle:"Robby, 20.11."},
     {frage:"Sub-Bots unter dem CEO: Graf schlägt das Monokel-Labor vor", wer:"offen", quelle:"Robby, 20.11."},
     {frage:"Microsoft Teams als möglicher späterer Kanal (Erweiterung neben Slack und Mail)?", wer:"offen", quelle:"Robby, 20.11."},
     {frage:"Freigabe des Preismodells durch die Menschen", wer:"Lukas, Jessica, Ada, Eyad", quelle:"Robby, 20.11."},
@@ -249,6 +267,7 @@ const DATEN = {
     {datum:"20.11.2026, 11:39", text:"Krümelzähler unter Wuschel ist aktiv: unverbindliche Beispielkalkulation pro Preisstufe (Kosten pro Kunde, Marge, Einrichtungspauschale, Break-even).", quelle:"Robby (Quelle Wuschel)"},
     {datum:"20.11.2026, 11:40", text:"Lukas gibt die Pilotkunden-Profile v2 frei. Hauptpilot: Handwerk, mit dem Elektrobetrieb als Demo-Beispiel.", quelle:"Robby"},
     {datum:"20.11.2026, 11:41", text:"Kartoffel-Logistik wird zusätzlich Dokubot (Beschlussprotokoll aus #entscheidungen, Berichtsentwürfe für #progress-reports). Vorschlag von Ada über Graf, zugesagt von Robby.", quelle:"Robby"},
+    {datum:"20.11.2026, 11:42", text:"Eyads Bot schlägt im Marktcheck-Thread Phase 4 „Schärfung“ vor (fünf Punkte, Wettbewerb, Risiken); nicht beschlossen.", quelle:"Robby"},
     {datum:"bis 11:40", text:"Phase 3: Landingpage-Text (Ada und Graf), Pilotkunden-Profile (Wuschel), Konzeptseite (Eyads Bot); die Keks-Inspektorin prüft jeden Teil.", geplant:true, quelle:"Robby"}
   ]
 };
@@ -264,6 +283,7 @@ $("stand").textContent = D.stand; $("firma").textContent = D.firma; $("produkt")
 
 let b = "";
 for (const g of (D.phasen||[])) b += `<div class="hero" style="margin-bottom:1rem;border-left-color:#0f766e;background:#ecf7f5"><strong>${esc(g.titel)}${badge("laeuft")}</strong><span>Seit ${esc(g.seit)} Uhr, Frist ${esc(g.frist)} Uhr:</span><table><tbody>${g.aufgaben.map(a=>`<tr><td style="width:240px"><strong>${esc(a.wer)}</strong></td><td>${esc(a.was)}${a.status?badge(a.status,a.label):""}</td></tr>`).join("")}</tbody></table><span>${esc(g.danach)}</span>${quelle(g.quelle)}</div>`;
+if (D.phase4) { const f=D.phase4; b += `<div class="hero" style="margin-bottom:1rem;border-left-color:#b7791f;background:#fdf6e7"><strong>${esc(f.titel)}${badge(f.status, f.statusText)}</strong><ol class="mvp">${f.punkte.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>${f.cfo?`<div style="background:#fff;border:1px solid #e5d3a8;border-radius:6px;padding:.7rem .9rem"><strong>${esc(f.cfo.titel)}${badge(f.cfo.status, f.cfo.statusText)}</strong><ul class="liste">${f.cfo.punkte.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>${quelle(f.cfo.quelle)}</div>`:""}<span><strong>Wettbewerb:</strong> ${f.wettbewerb.map(esc).join(" · ")}. <strong>Unser Vorteil:</strong> ${esc(f.vorteil)}</span><span><strong>Risiken:</strong></span><ul class="liste">${f.risiken.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>${quelle(f.quelle)}</div>`; }
 if (D.landing) { const l=D.landing; b += `<div class="hero" style="margin-bottom:1rem"><strong>${esc(l.titel)}${badge(l.status, l.statusText)}</strong><span style="font-size:1.15rem;font-weight:600">${esc(l.headline)}</span><span>${esc(l.intro)}</span><span><strong>Für wen:</strong> ${esc(l.fuerWen)}</span><span><strong>So funktioniert's:</strong></span><ol class="mvp">${l.schritte.map(x=>`<li>${esc(x)}</li>`).join("")}</ol><span><strong>Preisstufen:</strong> ${l.preise.map(esc).join(" ")}</span><span><strong>Call to Action:</strong> „${esc(l.cta)}“</span>${quelle(l.quelle)}</div>`; }
 if (D.demo) b += `<h3>${esc(D.demo.titel)} <span class="quelle">von ${esc(D.demo.autor)}, ${esc(D.demo.hinweis)}</span></h3><ol class="mvp">${D.demo.schritte.map(s=>`<li>${esc(s)}</li>`).join("")}</ol>${quelle(D.demo.quelle)}`;
 if (D.positionierung) b += `<div class="hero" style="margin-bottom:1rem"><strong>Positionierung${badge(D.positionierung.status, D.positionierung.statusText)}</strong><span>${esc(D.positionierung.text)}</span>${quelle(D.positionierung.quelle)}</div>`;

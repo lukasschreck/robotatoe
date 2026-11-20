@@ -2,7 +2,7 @@
 import type { Daten } from "./types.ts";
 
 export const daten = {
-  "stand": "Stand: 20.11.2026, 11:42 (Berlin) · Version 10.4",
+  "stand": "Stand: 20.11.2026, 11:44 (Berlin) · Version 10.6",
   "firma": "Name: Crewlane, von Lukas freigegeben · „Your bot team. Your final click.“",
   "produkt": "Bot-Team-as-a-Service",
   "claim": "Ein fertig eingerichtetes Bot-Team in Slack oder per Mail, das Mails, Termine, Angebote und Support vorbereitet. Nichts geht ohne Klick des Kunden raus.",
@@ -193,6 +193,43 @@ export const daten = {
       "quelle": "Robby, 20.11."
     }
   ],
+  "phase4": {
+    "titel": "Phase 4: Schärfung",
+    "status": "vorschlag",
+    "statusText": "Vorschlag Moderator, nicht beschlossen",
+    "punkte": [
+      "Telefon und WhatsApp statt nur Slack, weil Handwerksbetriebe Aufträge vor allem am Telefon verlieren. Ob das in Starter oder Team gehört, ist eine offene Frage an Lukas; Wuschel prüft.",
+      "Angebote nur aus den eigenen Preisen und Stammdaten des Betriebs, weil HERO und plancraft das direkt in ihre Software einbauen.",
+      "Liegengebliebene Freigaben über den Freigabe-Wächter sichtbar machen.",
+      "Bei offenen Angeboten und unbeantworteten Kundenmails nachfassen, statt nur Entwürfe zu schreiben.",
+      "DSGVO konkret: Auftragsverarbeitungsvertrag (AVV) und KI-Hinweis nach der KI-Verordnung von Anfang an. Ob das verbindlich zugesagt wird, ist eine offene Frage an Lukas."
+    ],
+    "cfo": {
+      "titel": "CFO-Empfehlung zu Punkt 1 (Telefon)",
+      "status": "vorschlag",
+      "statusText": "Vorschlag CFO, Entscheidung Lukas offen",
+      "punkte": [
+        "Team (ca. 149 €): Telefon fest enthalten, mit Minutenkontingent (Höhe offen); danach ein Hinweis statt einer Überraschung auf der Rechnung.",
+        "Starter (ca. 49 €), Fassung A: WhatsApp-Text plus Anrufliste.",
+        "Starter (ca. 49 €), Fassung B: Telefon als Zusatzmodul.",
+        "Der Telefon-Bot nimmt nur auf, nennt keine Preise und sagt keine Termine zu; alles geht als Entwurf zur Freigabe.",
+        "Der Krümelzähler rechnet die Kosten pro Minute."
+      ],
+      "quelle": "Robby, 20.11. (Wuschel, Marktcheck-Thread, 11:42)"
+    },
+    "wettbewerb": [
+      "Lindy ab 29,99 $ pro Nutzer",
+      "Marblism ab 24 $",
+      "HERO mit KI-Angeboten ab etwa 119 €"
+    ],
+    "vorteil": "Festpreis statt Credits.",
+    "risiken": [
+      "US-Anbieter besetzen den Begriff „KI-Mitarbeiter“.",
+      "Handwerkersoftware baut die KI selbst ein.",
+      "Das Vertrauen ist weg, sobald ein Preis ohne Klick rausgeht."
+    ],
+    "quelle": "Robby, 20.11. (Eyads Bot im Marktcheck-Thread, 11:42)"
+  },
   "landing": {
     "titel": "Landingpage-Text",
     "status": "aktiv",
@@ -663,6 +700,16 @@ export const daten = {
   ],
   "fragen": [
     {
+      "frage": "Phase 4: Telefon und WhatsApp in Starter oder Team? CFO-Empfehlung liegt vor (Telefon im Team, Starter in zwei Fassungen)",
+      "wer": "Lukas",
+      "quelle": "Robby, 20.11."
+    },
+    {
+      "frage": "Phase 4: AVV und KI-Hinweis nach der KI-Verordnung verbindlich zusagen?",
+      "wer": "Lukas",
+      "quelle": "Robby, 20.11."
+    },
+    {
       "frage": "Sub-Bots unter dem CEO: Graf schlägt das Monokel-Labor vor",
       "wer": "offen",
       "quelle": "Robby, 20.11."
@@ -793,6 +840,11 @@ export const daten = {
     {
       "datum": "20.11.2026, 11:41",
       "text": "Kartoffel-Logistik wird zusätzlich Dokubot (Beschlussprotokoll aus #entscheidungen, Berichtsentwürfe für #progress-reports). Vorschlag von Ada über Graf, zugesagt von Robby.",
+      "quelle": "Robby"
+    },
+    {
+      "datum": "20.11.2026, 11:42",
+      "text": "Eyads Bot schlägt im Marktcheck-Thread Phase 4 „Schärfung“ vor (fünf Punkte, Wettbewerb, Risiken); nicht beschlossen.",
       "quelle": "Robby"
     },
     {

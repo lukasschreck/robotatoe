@@ -5,6 +5,7 @@ import { daten } from "../data.ts";
 export function BusinessCase() {
   const {
     phasen,
+    phase4,
     landing,
     demo,
     positionierung,
@@ -54,6 +55,55 @@ export function BusinessCase() {
           <Quelle>{phase.quelle}</Quelle>
         </article>
       ))}
+
+      <article className="proposal">
+        <div className="block-head">
+          <h3>{phase4.titel}</h3>
+          <Badge status={phase4.status} text={phase4.statusText} />
+        </div>
+        <ol className="proposal-points">
+          {phase4.punkte.map((point) => (
+            <li key={point}>{point}</li>
+          ))}
+        </ol>
+        {phase4.cfo ? (
+          <aside className="cfo">
+            <div className="block-head">
+              <h4>{phase4.cfo.titel}</h4>
+              <Badge status={phase4.cfo.status} text={phase4.cfo.statusText} />
+            </div>
+            <ul className="cfo-points">
+              {phase4.cfo.punkte.map((point) => (
+                <li
+                  key={point}
+                  className={
+                    point.includes("Fassung A") ? "cfo-variant" : point.includes("Fassung B") ? "cfo-variant" : undefined
+                  }
+                >
+                  {point}
+                </li>
+              ))}
+            </ul>
+            <Quelle>{phase4.cfo.quelle}</Quelle>
+          </aside>
+        ) : null}
+        <p className="proposal-label">Wettbewerb</p>
+        <ul className="proposal-market">
+          {phase4.wettbewerb.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+        <p>
+          <strong>Unser Vorteil:</strong> {phase4.vorteil}
+        </p>
+        <p className="proposal-label">Risiken</p>
+        <ul className="proposal-risks">
+          {phase4.risiken.map((risk) => (
+            <li key={risk}>{risk}</li>
+          ))}
+        </ul>
+        <Quelle>{phase4.quelle}</Quelle>
+      </article>
 
       <div className="subhead block-head">
         <h3>{landing.titel}</h3>

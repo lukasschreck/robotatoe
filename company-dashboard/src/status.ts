@@ -57,6 +57,8 @@ export function countBadges(source: Daten): Record<BadgeStatus, number> {
     add("laeuft");
     for (const task of phase.aufgaben) add(task.status);
   }
+  add(source.phase4.status);
+  add(source.phase4.cfo?.status);
   add(source.landing.status);
   add(source.positionierung.status);
   add(source.abstimmung.status);
