@@ -2,7 +2,7 @@
 import type { Daten } from "./types.ts";
 
 export const daten = {
-  "stand": "Stand: 20.11.2026, 11:46 (Berlin) · Version 10.8",
+  "stand": "Stand: 20.11.2026, 11:51 (Berlin) · Version 10.9",
   "firma": "Name: Crewlane, von Lukas freigegeben · „Your bot team. Your final click.“",
   "produkt": "Bot-Team-as-a-Service",
   "claim": "Ein fertig eingerichtetes Bot-Team in Slack oder per Mail, das Mails, Termine, Angebote und Support vorbereitet. Nichts geht ohne Klick des Kunden raus.",
@@ -205,7 +205,11 @@ export const daten = {
       },
       "Angebote nur aus den eigenen Preisen und Stammdaten des Betriebs, weil HERO und plancraft das direkt in ihre Software einbauen.",
       "Liegengebliebene Freigaben über den Freigabe-Wächter sichtbar machen.",
-      "Bei offenen Angeboten und unbeantworteten Kundenmails nachfassen, statt nur Entwürfe zu schreiben.",
+      {
+        "text": "Bei offenen Angeboten und unbeantworteten Kundenmails nachfassen, statt nur Entwürfe zu schreiben. Steht im Landingpage-Text v2.",
+        "status": "aktiv",
+        "statusText": "im Landingpage-Text v2 (laut Moderator, 11:50)"
+      },
       {
         "text": "DSGVO konkret: Auftragsverarbeitungsvertrag (AVV) und KI-Hinweis nach der KI-Verordnung. Entscheidung: verbindlich von Anfang an zugesagt.",
         "status": "entschieden",
@@ -221,9 +225,9 @@ export const daten = {
         "Starter (ca. 49 €), Fassung A: WhatsApp-Text plus Anrufliste.",
         "Starter (ca. 49 €), Fassung B: Telefon als Zusatzmodul.",
         "Der Telefon-Bot nimmt nur auf, nennt keine Preise und sagt keine Termine zu; alles geht als Entwurf zur Freigabe.",
-        "Der Krümelzähler rechnet die Kosten pro Minute."
+        "Der Krümelzähler rechnet die Kosten pro Minute. Nachtrag 11:50: Die Telefon-Kalkulation ruht, bis weitere Kanäle angegangen werden."
       ],
-      "quelle": "Robby, 20.11. (Wuschel, Marktcheck-Thread, 11:42)"
+      "quelle": "Robby, 20.11. (Wuschel, Marktcheck-Thread, 11:42; Nachtrag laut Moderator, 11:50)"
     },
     "wettbewerb": [
       "Lindy ab 29,99 $ pro Nutzer",
@@ -880,6 +884,11 @@ export const daten = {
     {
       "datum": "20.11.2026, 11:44",
       "text": "Lukas übernimmt Adas Vorschlag: zum Start nur Slack, Telefon und WhatsApp später als weitere Kanäle prüfen. Ersetzt die Starter-Entscheidung von 11:43; CFO-Empfehlung überholt.",
+      "quelle": "Robby"
+    },
+    {
+      "datum": "20.11.2026, 11:50",
+      "text": "Nachtrag laut Moderator: Die Telefon-Kalkulation von Wuschel und dem Krümelzähler ruht, bis weitere Kanäle angegangen werden. Nachfassen bei offenen Angeboten steht im Landingpage-Text v2.",
       "quelle": "Robby"
     },
     {
