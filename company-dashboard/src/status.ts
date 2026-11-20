@@ -78,6 +78,7 @@ export function countBadges(source: Daten): Record<BadgeStatus, number> {
   add("vorschlag");
   add(source.usp.status);
   add(source.mvp.status);
+  add(source.mvp.freigaberegel.status);
   add(source.mvp.regelStatus);
   add(source.tech.status);
   add(source.architektur.status);

@@ -316,6 +316,12 @@ export function BusinessCase() {
           <li key={feature}>{feature}</li>
         ))}
       </ol>
+      <div className="block-head">
+        <h3>{mvp.freigaberegel.titel}</h3>
+        <Badge status={mvp.freigaberegel.status} text={mvp.freigaberegel.statusText} />
+      </div>
+      <p>{mvp.freigaberegel.text}</p>
+      <Quelle>{mvp.freigaberegel.quelle}</Quelle>
       <p>
         <strong>Regel für Entwürfe:</strong> <Badge status={mvp.regelStatus} /> {mvp.regel}
         {mvp.regelHinweis ? <span className="quelle"> ({mvp.regelHinweis})</span> : null}

@@ -1,6 +1,6 @@
 # Unternehmensübersicht
 
-React-App für die Firmenübersicht von Bot-Team-as-a-Service. Alle Texte stammen aus Version 10.14. `npm run build` schreibt die eigenständige Seite nach `release/company.html` und nach `bot-mania/company.html`.
+React-App für die Firmenübersicht von Bot-Team-as-a-Service. Alle Texte stammen aus Version 10.15. `npm run build` schreibt die eigenständige Seite nach `release/company.html` und nach `bot-mania/company.html`.
 
 ## Daten aktualisieren
 

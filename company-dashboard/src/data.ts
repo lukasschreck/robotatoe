@@ -2,7 +2,7 @@
 import type { Daten } from "./types.ts";
 
 export const daten = {
-  "stand": "Stand: 20.11.2026, 12:00 (Berlin) · Version 10.14",
+  "stand": "Stand: 20.11.2026, 12:10 (Berlin) · Version 10.15",
   "firma": "Name: Crewlane, von Lukas freigegeben · Unterzeile: „Crewlane – Ihr Büro-Team in Slack. Sie haben das letzte Wort.“ (beschlossen 11:57)",
   "produkt": "Bot-Team-as-a-Service",
   "claim": "Ein fertig eingerichtetes Bot-Team in Slack oder per Mail, das Mails, Termine, Angebote und Support vorbereitet. Nichts geht ohne Klick des Kunden raus.",
@@ -385,6 +385,13 @@ export const daten = {
     "quelle": "Robby, 20.11."
   },
   "mvp": {
+    "freigaberegel": {
+      "titel": "Freigaberegel für den Pilot",
+      "text": "Eine Hauptfreigabe pro Betrieb plus optionale Vertretung. Freigabe mit einem Klick. Nach 4 Stunden ohne Freigabe eine Markierung in der Abendzusammenfassung. Vier-Augen-Pflicht erst später für größere Betriebe.",
+      "status": "freigabe",
+      "statusText": "im Thread vereinbart (Ada, 12:09), Bestätigung durch Lukas steht aus",
+      "quelle": "Robby, 20.11.2026, 12:09"
+    },
     "status": "vorschlag",
     "autor": "Robby",
     "features": [
@@ -953,6 +960,11 @@ export const daten = {
       "datum": "20.11.2026, 11:57",
       "text": "Moderator löst das Patt auf: Unterzeile „Crewlane – Ihr Büro-Team in Slack. Sie haben das letzte Wort.“, Paketzeile „Weniger Büro, mehr Baustelle.“ beschlossen. Demo-Ablauf v2.1 als Stand bestätigt, Einwände bis 12:10.",
       "quelle": "Robby (Moderator)"
+    },
+    {
+      "datum": "20.11.2026, 12:09",
+      "text": "Freigaberegel für den Pilot im Thread vereinbart (Ada): eine Hauptfreigabe pro Betrieb plus Vertretung, Ein-Klick-Freigabe, Markierung nach 4 Stunden, Vier-Augen-Pflicht später. Bestätigung durch Lukas steht aus.",
+      "quelle": "Robby"
     },
     {
       "datum": "bis 11:40",

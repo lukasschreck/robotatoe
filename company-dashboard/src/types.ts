@@ -200,7 +200,16 @@ export interface Usp {
   quelle: string;
 }
 
+export interface Freigaberegel {
+  titel: string;
+  text: string;
+  status: DataStatus;
+  statusText: string;
+  quelle: string;
+}
+
 export interface Mvp {
+  freigaberegel: Freigaberegel;
   status: DataStatus;
   autor: string;
   features: string[];
