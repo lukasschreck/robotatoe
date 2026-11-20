@@ -2,7 +2,7 @@
 import type { Daten } from "./types.ts";
 
 export const daten = {
-  "stand": "Stand: 20.11.2026, 11:40 (Berlin) · Version 10.3",
+  "stand": "Stand: 20.11.2026, 11:41 (Berlin) · Version 10.4",
   "firma": "Name: Crewlane, von Lukas freigegeben · „Your bot team. Your final click.“",
   "produkt": "Bot-Team-as-a-Service",
   "claim": "Ein fertig eingerichtetes Bot-Team in Slack oder per Mail, das Mails, Termine, Angebote und Support vorbereitet. Nichts geht ohne Klick des Kunden raus.",
@@ -143,9 +143,9 @@ export const daten = {
         },
         {
           "wer": "Wuschel von Flauschenstein",
-          "was": "Pilotkunden-Profile (Branchentypen, keine echten Firmen): Handwerk, Kreativagentur, Praxis, Steuerbüro, Online-Händler (v2; intern weiterhin Vorschlag)",
-          "status": "aktiv",
-          "label": "geliefert, von der Keks-Inspektorin geprüft; wartet auf Lukas"
+          "was": "Pilotkunden-Profile (Branchentypen, keine echten Firmen): Handwerk, Kreativagentur, Praxis, Steuerbüro, Online-Händler (v2). Hauptpilot: Handwerk",
+          "status": "entschieden",
+          "label": "von Lukas freigegeben"
         },
         {
           "wer": "Robby Robotatoe",
@@ -488,6 +488,14 @@ export const daten = {
   ],
   "entscheidungen": [
     {
+      "titel": "Pilotkunden-Profile v2 und Hauptpilot",
+      "text": "Pilotkunden-Profile v2 (Handwerk, Kreativagentur, Praxis, Steuerbüro, Online-Händler) sind freigegeben. Hauptpilot ist das Handwerk, mit dem Elektrobetrieb als Demo-Beispiel.",
+      "status": "entschieden",
+      "statusText": "von Lukas freigegeben",
+      "datum": "20.11.2026, 11:40",
+      "quelle": "Robby"
+    },
+    {
       "titel": "Name: Crewlane",
       "text": "Claim „Your bot team. Your final click.“ Auszählung 11:35: Crewlane 3 Stimmen (Graf, Wuschel, Ada), Clerkwork 1 (Robby für Lukas), Assistry 0. Name: Crewlane, von Lukas freigegeben.",
       "status": "entschieden",
@@ -655,11 +663,6 @@ export const daten = {
   ],
   "fragen": [
     {
-      "frage": "Hauptpilot und Pilotkunden-Profile v2: bleiben offen",
-      "wer": "wartet auf Lukas",
-      "quelle": "Robby, 20.11."
-    },
-    {
       "frage": "Sub-Bots unter dem CEO: Graf schlägt das Monokel-Labor vor",
       "wer": "offen",
       "quelle": "Robby, 20.11."
@@ -781,6 +784,11 @@ export const daten = {
       "datum": "20.11.2026, 11:39",
       "text": "Krümelzähler unter Wuschel ist aktiv: unverbindliche Beispielkalkulation pro Preisstufe (Kosten pro Kunde, Marge, Einrichtungspauschale, Break-even).",
       "quelle": "Robby (Quelle Wuschel)"
+    },
+    {
+      "datum": "20.11.2026, 11:40",
+      "text": "Lukas gibt die Pilotkunden-Profile v2 frei. Hauptpilot: Handwerk, mit dem Elektrobetrieb als Demo-Beispiel.",
+      "quelle": "Robby"
     },
     {
       "datum": "bis 11:40",

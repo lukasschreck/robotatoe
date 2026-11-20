@@ -88,7 +88,7 @@ footer{text-align:center;font-size:.75rem;color:var(--grau);padding:0 1rem 2rem}
 <script>
 /* ===== DATEN: nur Geliefertes. status: entschieden | freigabe | inarbeit | geplant | vorschlag | offen ===== */
 const DATEN = {
-  stand: "Stand: 20.11.2026, 11:40 (Berlin) · Version 10.3",
+  stand: "Stand: 20.11.2026, 11:41 (Berlin) · Version 10.4",
   firma: "Name: Crewlane, von Lukas freigegeben · „Your bot team. Your final click.“",
   produkt: "Bot-Team-as-a-Service",
   claim: "Ein fertig eingerichtetes Bot-Team in Slack oder per Mail, das Mails, Termine, Angebote und Support vorbereitet. Nichts geht ohne Klick des Kunden raus.",
@@ -117,7 +117,7 @@ const DATEN = {
   phasen: [
     {titel:"Phase 3: Produktmaterial", seit:"11:10", frist:"11:40", aufgaben:[
       {wer:"Ada und Graf Kabelbrand", was:"Landingpage-Text (siehe unten)", status:"aktiv", label:"geliefert, von Ada freigegeben"},
-      {wer:"Wuschel von Flauschenstein", was:"Pilotkunden-Profile (Branchentypen, keine echten Firmen): Handwerk, Kreativagentur, Praxis, Steuerbüro, Online-Händler (v2; intern weiterhin Vorschlag)", status:"aktiv", label:"geliefert, von der Keks-Inspektorin geprüft; wartet auf Lukas"},
+      {wer:"Wuschel von Flauschenstein", was:"Pilotkunden-Profile (Branchentypen, keine echten Firmen): Handwerk, Kreativagentur, Praxis, Steuerbüro, Online-Händler (v2). Hauptpilot: Handwerk", status:"entschieden", label:"von Lukas freigegeben"},
       {wer:"Robby Robotatoe", was:"Demo-Ablauf in 5 Schritten", status:"aktiv", label:"geliefert 11:11"},
       {wer:"Eyads Bot", was:"Konzeptseite"}],
       danach:"Die Keks-Inspektorin prüft jeden Teil, die Landingpage-Texte und die Konzeptseite noch vor der Abgabe.", quelle:"Robby, 20.11."},
@@ -193,6 +193,7 @@ const DATEN = {
       {name:"Code-Bot", rolle:"", status:"freigabe", statusText:"vorgeschlagen"}]}
   ],
   entscheidungen: [
+    {titel:"Pilotkunden-Profile v2 und Hauptpilot", text:"Pilotkunden-Profile v2 (Handwerk, Kreativagentur, Praxis, Steuerbüro, Online-Händler) sind freigegeben. Hauptpilot ist das Handwerk, mit dem Elektrobetrieb als Demo-Beispiel.", status:"entschieden", statusText:"von Lukas freigegeben", datum:"20.11.2026, 11:40", quelle:"Robby"},
     {titel:"Name: Crewlane", text:"Claim „Your bot team. Your final click.“ Auszählung 11:35: Crewlane 3 Stimmen (Graf, Wuschel, Ada), Clerkwork 1 (Robby für Lukas), Assistry 0. Name: Crewlane, von Lukas freigegeben.", status:"entschieden", statusText:"von Lukas freigegeben (11:36)", datum:"20.11.2026, 11:36", quelle:"Robby"},
     {titel:"Support im MVP über den Mail-Bot", text:"Der Mail-Bot übernimmt das Support-Postfach; der eigene Support-Bot bleibt als geplant im Produkt-Team.", status:"entschieden", datum:"20.11.2026", quelle:"Robby (Entscheidung des CTO)"},
     {titel:"Zuschnitt der Preisstufen", text:"Starter: 1 Bot nach Wahl (Postfach oder Termine). Team: Mail-Bot, Koordinator, Termin- & Angebots-Bot. Laut Robby von Lukas freigegeben; Preise unverändert unverbindlich.", status:"entschieden", statusText:"von Lukas freigegeben (laut Robby)", datum:"20.11.2026, 11:36", quelle:"Robby"},
@@ -220,7 +221,6 @@ const DATEN = {
     {titel:"Sub-Bots von Graf Kabelbrand", text:"Monokel-Marketing (laut Steckbrief des Grafen), Monokel-Labor, Rezept-Tüftler, Funkenschlag, Support-Kobold und weitere angekündigte.", warStatus:"vorschlag", datum:"20.11.2026"}
   ],
   fragen: [
-    {frage:"Hauptpilot und Pilotkunden-Profile v2: bleiben offen", wer:"wartet auf Lukas", quelle:"Robby, 20.11."},
     {frage:"Sub-Bots unter dem CEO: Graf schlägt das Monokel-Labor vor", wer:"offen", quelle:"Robby, 20.11."},
     {frage:"Microsoft Teams als möglicher späterer Kanal (Erweiterung neben Slack und Mail)?", wer:"offen", quelle:"Robby, 20.11."},
     {frage:"Freigabe des Preismodells durch die Menschen", wer:"Lukas, Jessica, Ada, Eyad", quelle:"Robby, 20.11."},
@@ -247,6 +247,7 @@ const DATEN = {
     {datum:"20.11.2026, 11:35", text:"Namensabstimmung ausgezählt: Crewlane 3, Clerkwork 1, Assistry 0. Crewlane, von Lukas freigegeben (11:36). Support im MVP über den Mail-Bot (CTO). Zuschnitt der Preisstufen laut Robby von Lukas freigegeben. Hauptpilot und Pilotkunden-Profile warten auf Lukas.", quelle:"Robby"},
     {datum:"20.11.2026, 11:38", text:"Ada gibt den Landingpage-Text für Crewlane frei. Die HTML-Fassung kommt künftig zusätzlich ins Repo lukasschreck/robotatoe (bot-mania/company.html), gemergt wird nur von Lukas.", quelle:"Robby"},
     {datum:"20.11.2026, 11:39", text:"Krümelzähler unter Wuschel ist aktiv: unverbindliche Beispielkalkulation pro Preisstufe (Kosten pro Kunde, Marge, Einrichtungspauschale, Break-even).", quelle:"Robby (Quelle Wuschel)"},
+    {datum:"20.11.2026, 11:40", text:"Lukas gibt die Pilotkunden-Profile v2 frei. Hauptpilot: Handwerk, mit dem Elektrobetrieb als Demo-Beispiel.", quelle:"Robby"},
     {datum:"bis 11:40", text:"Phase 3: Landingpage-Text (Ada und Graf), Pilotkunden-Profile (Wuschel), Konzeptseite (Eyads Bot); die Keks-Inspektorin prüft jeden Teil.", geplant:true, quelle:"Robby"}
   ]
 };
